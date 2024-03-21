@@ -1,0 +1,14 @@
+---
+layout: default
+title: Blog
+---
+<h2, class="default-title">Blogs</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <li, class="default-title">
+      <h2, class="default-content"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <!-- {{ post.excerpt }} -->
+    </li>
+  {% endfor %}
+</ul>

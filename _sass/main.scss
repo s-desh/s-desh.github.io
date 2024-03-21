@@ -1,0 +1,42 @@
+.current-link {
+    color: #ff0000; // Green
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+.default-link {
+    color: #000000; // Blue
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  body {
+    background-color: #f9f7eb; // Slight off-white towards yellow
+    padding: 20px;
+  }
+  
+  .default-title {
+    color: #ff0000; // Red
+    font-family: 'Helvetica', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .default-content {
+    color: #000000; // Black
+    font-family: 'Helvetica';
+    font-size: 1.2rem;
+  }
+
+  .blog-container {
+    background-color: #f9f7eb; // Slight off-white towards yellow
+    // padding: 100px;
+    margin-top: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
