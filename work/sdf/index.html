@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<link rel="icon" type="image/ico" href="https://s-desh.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://s-desh.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://s-desh.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://s-desh.github.io/android-chrome-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://s-desh.github.io/apple-touch-icon.png">
+
+<meta name="description" content=""/>
+
+
+<meta name="fediverse:creator" content="@username@instance.url">
+
+
+<title>
+    
+    Robotics Intern | Shlok Deshmukh
+    
+</title>
+
+<link rel="canonical" href="https://s-desh.github.io/work/sdf/"/>
+
+<meta property="og:url" content="https://s-desh.github.io/work/sdf/">
+  <meta property="og:site_name" content="Shlok Deshmukh">
+  <meta property="og:title" content="Robotics Intern">
+  <meta property="og:description" content="Mainblades (3 months)">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="work">
+    <meta property="article:published_time" content="2024-06-27T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-27T00:00:00+00:00">
+    <meta property="article:tag" content="Learning">
+    <meta property="article:tag" content="Control">
+    <meta property="article:tag" content="Aerial-Robotics">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.a13698cc7ef72c21c69a03097b5c4431d517d917464093d4bdf18bfe778d2d5c.css" media="all">
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-xxxxxxxxx');
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+</head>
+
+
+
+
+
+
+
+<body class="light">
+
+  <div class="content">
+    <header>
+      
+
+<div class="header">
+
+    
+
+    <h1 class="header-title">
+        <a href="https://s-desh.github.io/">Shlok Deshmukh</a>
+    </h1>
+
+    <div class="header-menu">
+        
+
+        
+        
+
+        <p
+            class="small ">
+            <a href="/" >
+                /home
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/project" >
+                /projects
+            </a>
+        </p>
+        
+
+        <p
+            class="small ">
+            <a href="/work" >
+                /work
+            </a>
+        </p>
+        
+        
+    </div>
+
+    
+
+</div>
+
+    </header>
+
+    <main class="main">
+      
+
+
+
+
+
+
+
+<div  class="autonumber" >
+  <article>
+    <header class="single-intro-container">
+        
+        <h1 class="single-title">Robotics Intern</h1>
+        <p class="single-summary">Mainblades (3 months)</p>
+        
+        <div class="single-subsummary">
+          
+          <div>
+            
+            <p class="single-date">
+              <time datetime="2024-06-27T00:00:00&#43;00:00">June 27, 2024</time>
+            </p>
+          </div>
+        </div>
+        
+    </header>
+    
+    <div class="single-content">
+      <p>Mainblades does aircraft inspections autonomously with drones. During my internship, I built a library to represent the obstacle map with SDFs (Signed Distance Fields), this enables using gradient based path planning algorithms, generating smoother trajectories.</p>
+
+<div class="table-outer">
+    <table>
+        <thead>
+            <tr>
+                <th>Point cloud reconstruction</th>
+                <th>SDF from point cloud</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="/images/747400_model.png" alt="Point cloud reconstruction" width="360"></td>
+                <td><img src="/images/747400_sdf.png" alt="SDF from point cloud" width="360"></td>
+            </tr>
+        </tbody>
+    </table>
+</div><p><strong>Highlights</strong></p>
+<ul>
+<li>
+<p>Built SDFGen to convert LiDAR point clouds and reconstructed aircraft models into SDFs (signed distance fields) maps.</p>
+</li>
+<li>
+<p>Developed sdfgen_live (ROS) to integrate live LiDAR/rosbag data during flight and publish an SDF map for online planners while supporting initialization from prior maps for faster startup.</p>
+</li>
+<li>
+<p>Validated with static reconstructed aircraft models (B747/B777), flight rosbags, and hardware-in-the-loop on a DJI M300 and achieved 2 Hz SDF generation onboard.</p>
+</li>
+</ul>
+<p><strong>Languages and tools used:</strong> C++, ROS</p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+  
+
+<div class="single-pagination">
+    <hr />
+
+    <div class="flexnowrap">
+
+        <div class="single-pagination-prev">
+            
+            <div class="single-pagination-container-prev">
+                <div class="single-pagination-text">←</div>
+                <div class="single-pagination-text">
+                    <a href="/work/data_engg/">
+                        Data Engineer
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="single-pagination-next">
+            
+        </div>
+
+    </div>
+
+    <hr />
+</div>
+
+
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+    </main>
+  </div>
+
+  
+  
+
+
+
+
+
+    
+
+
+
+
+  <footer>
+    
+
+
+  </footer>
+
+  
+  <link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+  
+<script defer 
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script>
+
+<script defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ]
+    });
+  });
+</script>
+  
+</body>
+
+<script src="/js/theme-switch.js"></script>
+<script defer src="/js/copy-code.js"></script>
+</html>

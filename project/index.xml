@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Shlok Deshmukh</title>
+    <link>https://s-desh.github.io/project/</link>
+    <description>Recent content in Projects on Shlok Deshmukh</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://s-desh.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whole-body control of an aerial manipulator with reinforcement learning</title>
+      <link>https://s-desh.github.io/project/thesis/</link>
+      <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/project/thesis/</guid>
+      <description>Master Thesis</description>
+    </item>
+    <item>
+      <title>Fleet Autonomy for Lely Discovery Collector</title>
+      <link>https://s-desh.github.io/project/fleet_auto/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/project/fleet_auto/</guid>
+      <description>Project</description>
+    </item>
+    <item>
+      <title>Vision based obstacle avoidance for MAV</title>
+      <link>https://s-desh.github.io/project/mav/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/project/mav/</guid>
+      <description>Project</description>
+    </item>
+    <item>
+      <title>Multi-object tracking</title>
+      <link>https://s-desh.github.io/project/multi_obj/</link>
+      <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/project/multi_obj/</guid>
+      <description>Project</description>
+    </item>
+  </channel>
+</rss>
