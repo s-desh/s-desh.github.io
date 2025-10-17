@@ -1,0 +1,9 @@
+:root {
+    /* --main-width: 1024px; */
+    --font-body: 'helvetica';
+
+    /* --font-mono: "Monaspace", ui-monospace, monospace; */
+    --font-mono: monospace;
+    --p-font-size: 0.9em;
+    --h1-font-size: 1.8em;
+}
