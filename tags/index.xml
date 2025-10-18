@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Shlok Deshmukh</title>
-    <link>https://s-desh.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Shlok Deshmukh</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://s-desh.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aerial-Robotics</title>
-      <link>https://s-desh.github.io/tags/aerial-robotics/</link>
+      <link>http://localhost:1313/tags/aerial-robotics/</link>
       <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://s-desh.github.io/tags/aerial-robotics/</guid>
+      <guid>http://localhost:1313/tags/aerial-robotics/</guid>
       <description></description>
     </item>
     <item>
       <title>Control</title>
-      <link>https://s-desh.github.io/tags/control/</link>
+      <link>http://localhost:1313/tags/control/</link>
       <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://s-desh.github.io/tags/control/</guid>
+      <guid>http://localhost:1313/tags/control/</guid>
       <description></description>
     </item>
     <item>
       <title>Learning</title>
-      <link>https://s-desh.github.io/tags/learning/</link>
+      <link>http://localhost:1313/tags/learning/</link>
       <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://s-desh.github.io/tags/learning/</guid>
+      <guid>http://localhost:1313/tags/learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Database</title>
-      <link>https://s-desh.github.io/tags/database/</link>
+      <link>http://localhost:1313/tags/database/</link>
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://s-desh.github.io/tags/database/</guid>
+      <guid>http://localhost:1313/tags/database/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>https://s-desh.github.io/tags/java/</link>
+      <link>http://localhost:1313/tags/java/</link>
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://s-desh.github.io/tags/java/</guid>
+      <guid>http://localhost:1313/tags/java/</guid>
       <description></description>
     </item>
   </channel>
