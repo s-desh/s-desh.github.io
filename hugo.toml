@@ -14,7 +14,7 @@ unsafe = true
 
 [params]
 # Meta description
-description = "A Tech Blog"
+description = ""
 pluralizeListTitles = false
 
 # Appearance settings
@@ -27,14 +27,15 @@ showFooter = false
 # Intro on main page, content is markdown
 homeIntroContent = """
 I'm an engineer with hands-on experience in perception, motion planning and learning-based control of mobile manipulators and drones. Previously, I worked as a 
-Data Engineer for two years and now I'm interested in developing and integrating robotic subsystems (perception, planning and control) for autonomy. Feel free to browse through my projects (non-exhaustive) and work.
+Data Engineer and now I'm interested in developing and integrating robotic subsystems for autonomy. Feel free to browse through my projects (non-exhaustive) and work.
 
 Reach out at: sdesh.work@gmail.com
 """
 
 # Collection to display on home
-# homeCollectionTitle = 'Work'
-# homeCollection = 'work'
+homeCollectionTitle = 'highlights'
+homeCollection = 'project'
+homeCollectionSelected = ['project/thesis', 'work/sdf', 'project/mav']
 
 # Lists parameters
 paginationSize = 100

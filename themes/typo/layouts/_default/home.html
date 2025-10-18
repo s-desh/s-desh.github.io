@@ -35,27 +35,43 @@
 {{ if .Site.Params.homeCollection }}
 
 <div class="list-container">
-    {{ with .Site.Params.homeCollectionTitle}}
-    <h1> {{ . }} </h1>
+  {{ with .Site.Params.homeCollectionTitle }}
+    <h1>{{ . }}</h1>
+  {{ end }}
+
+  {{/* Build a Pages slice only from params.homeCollectionSelected */}}
+  {{ $pages := slice }}
+  {{ $seen := dict }}
+
+  {{ with .Site.Params.homeCollectionSelected }}
+    {{ range . }}
+      {{ $p := site.GetPage . }}
+      {{ with $p }}
+        {{/* dedupe by RelPermalink */}}
+        {{ $key := .RelPermalink }}
+        {{ if not (isset $seen $key) }}
+          {{ $seen = merge $seen (dict $key true) }}
+          {{ $pages = $pages | append . }}
+        {{ end }}
+      {{ end }}
     {{ end }}
+  {{ end }}
 
-    {{ $pages := where .Site.RegularPages "Section" .Site.Params.homeCollection
-    }}
+  {{/* Pagination size (fallback to 10 if not set or <= 0) */}}
+  {{ $paginationSize := 10 }}
+  {{ with .Site.Params.paginationSize }}
+    {{ if gt . 0 }}{{ $paginationSize = . }}{{ end }}
+  {{ end }}
 
-    {{ $paginationSize := 1}}
-    {{ if (gt .Site.Params.paginationSize 0) }}
-    {{ $paginationSize = .Site.Params.paginationSize }}
-    {{ end }}
+  {{ $paginator := .Paginate $pages $paginationSize }}
 
-    {{ $paginator := .Paginate $pages $paginationSize }}
+  {{ range $index, $page := $paginator.Pages }}
+    {{ partial "post-entry.html" $page }}
+  {{ end }}
 
-    {{ range $index, $page := $paginator.Pages }}
-    {{ partial "post-entry.html" $page}}
-    {{ end }}
-
-    {{ partial "pagination-controls.html" $paginator}}
-
-    {{ end }}
+  {{ partial "pagination-controls.html" $paginator }}
 </div>
 
+
+{{ end }}
 {{ end }}
