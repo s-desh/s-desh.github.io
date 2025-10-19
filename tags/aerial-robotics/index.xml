@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aerial-Robotics on Shlok Deshmukh</title>
-    <link>http://localhost:1313/tags/aerial-robotics/</link>
+    <link>https://s-desh.github.io/tags/aerial-robotics/</link>
     <description>Recent content in Aerial-Robotics on Shlok Deshmukh</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/aerial-robotics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://s-desh.github.io/tags/aerial-robotics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Whole-body control of an aerial manipulator with reinforcement learning</title>
-      <link>http://localhost:1313/project/thesis/</link>
+      <link>https://s-desh.github.io/project/thesis/</link>
       <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/thesis/</guid>
+      <guid>https://s-desh.github.io/project/thesis/</guid>
       <description>Master Thesis</description>
     </item>
     <item>
-      <title>Fleet Autonomy for Lely Discovery Collector</title>
-      <link>http://localhost:1313/project/fleet_auto/</link>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/fleet_auto/</guid>
-      <description>Project</description>
-    </item>
-    <item>
       <title>Robotics Intern</title>
-      <link>http://localhost:1313/work/sdf/</link>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/sdf/</guid>
+      <link>https://s-desh.github.io/work/sdf/</link>
+      <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/work/sdf/</guid>
       <description>Mainblades (3 months)</description>
     </item>
     <item>
-      <title>Vision based obstacle avoidance for MAV</title>
-      <link>http://localhost:1313/project/mav/</link>
+      <title>Fleet Autonomy for Lely Discovery Collector</title>
+      <link>https://s-desh.github.io/project/fleet_auto/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/mav/</guid>
-      <description>Project</description>
+      <guid>https://s-desh.github.io/project/fleet_auto/</guid>
+      <description>at TU Delft</description>
+    </item>
+    <item>
+      <title>Vision based obstacle avoidance for MAV</title>
+      <link>https://s-desh.github.io/project/mav/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/project/mav/</guid>
+      <description>at TU Delft</description>
     </item>
     <item>
       <title>Multi-object tracking</title>
-      <link>http://localhost:1313/project/multi_obj/</link>
-      <pubDate>Sat, 27 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/multi_obj/</guid>
-      <description>Project</description>
+      <link>https://s-desh.github.io/project/multi_obj/</link>
+      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/project/multi_obj/</guid>
+      <description>at TU Delft</description>
     </item>
     <item>
       <title>Data Engineer</title>
-      <link>http://localhost:1313/work/data_engg/</link>
+      <link>https://s-desh.github.io/work/data_engg/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/data_engg/</guid>
+      <guid>https://s-desh.github.io/work/data_engg/</guid>
       <description>Elucidata (2 years)</description>
     </item>
   </channel>

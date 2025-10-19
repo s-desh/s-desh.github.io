@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Works on Shlok Deshmukh</title>
-    <link>http://localhost:1313/work/</link>
+    <link>https://s-desh.github.io/work/</link>
     <description>Recent content in Works on Shlok Deshmukh</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/work/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://s-desh.github.io/work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Robotics Intern</title>
-      <link>http://localhost:1313/work/sdf/</link>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/sdf/</guid>
+      <link>https://s-desh.github.io/work/sdf/</link>
+      <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/work/sdf/</guid>
       <description>Mainblades (3 months)</description>
     </item>
     <item>
       <title>Data Engineer</title>
-      <link>http://localhost:1313/work/data_engg/</link>
+      <link>https://s-desh.github.io/work/data_engg/</link>
       <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work/data_engg/</guid>
+      <guid>https://s-desh.github.io/work/data_engg/</guid>
       <description>Elucidata (2 years)</description>
     </item>
   </channel>
