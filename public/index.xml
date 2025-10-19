@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Shlok Deshmukh</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Shlok Deshmukh</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whole-body control of an aerial manipulator with reinforcement learning</title>
+      <link>http://localhost:1313/project/thesis/</link>
+      <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/thesis/</guid>
+      <description>Master Thesis</description>
+    </item>
+    <item>
+      <title>Robotics Intern</title>
+      <link>http://localhost:1313/work/sdf/</link>
+      <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/sdf/</guid>
+      <description>Mainblades (3 months)</description>
+    </item>
+    <item>
+      <title>Fleet Autonomy for Lely Discovery Collector</title>
+      <link>http://localhost:1313/project/fleet_auto/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/fleet_auto/</guid>
+      <description>at TU Delft</description>
+    </item>
+    <item>
+      <title>Vision based obstacle avoidance for MAV</title>
+      <link>http://localhost:1313/project/mav/</link>
+      <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/mav/</guid>
+      <description>at TU Delft</description>
+    </item>
+    <item>
+      <title>Multi-object tracking</title>
+      <link>http://localhost:1313/project/multi_obj/</link>
+      <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/multi_obj/</guid>
+      <description>at TU Delft</description>
+    </item>
+    <item>
+      <title>Whole-body control of an aerial manipulator with reinforcement learning</title>
+      <link>http://localhost:1313/posts/first/</link>
+      <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/first/</guid>
+      <description>An LSM Tree overview and Java implementation.</description>
+    </item>
+    <item>
+      <title>Data Engineer</title>
+      <link>http://localhost:1313/work/data_engg/</link>
+      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/data_engg/</guid>
+      <description>Elucidata (2 years)</description>
+    </item>
+  </channel>
+</rss>
