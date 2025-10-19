@@ -46,4 +46,4 @@ In short, the objective was to control the end-effector of an aerial manipualtor
 
 **Languages and tools used:** C++, Python, ROS, Isaac Sim, Gazebo
 
-*Working on this, I got to stretch my limits and test my patience, making it rewarding and incredibly satisfying, especially after successful real-world experiments.*
+*Working on this, I got to stretch my abilities, test my patience and perseverance, making it rewarding and incredibly satisfying, especially after successful real-world experiments.*

@@ -2,8 +2,8 @@
 title: "Vision based obstacle avoidance for MAV"
 # author: "Francesco"
 # authorAvatarPath: "/avatar.jpeg"
-date: "2024-06-27"
-summary: "Project"
+date: "2024-03-20"
+summary: "at TU Delft"
 # description: "Master Thesis"
 # toc: true
 # readTime: true

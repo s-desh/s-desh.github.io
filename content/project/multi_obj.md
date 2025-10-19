@@ -2,8 +2,8 @@
 title: "Multi-object tracking"
 # author: "Francesco"
 # authorAvatarPath: "/avatar.jpeg"
-date: "2024-01-27"
-summary: "Project"
+date: "2024-01-30"
+summary: "at TU Delft"
 # description: "Master Thesis"
 # toc: true
 # readTime: true

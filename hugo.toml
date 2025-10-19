@@ -27,9 +27,11 @@ showFooter = false
 # Intro on main page, content is markdown
 homeIntroContent = """
 I'm an engineer with hands-on experience in perception, motion planning and learning-based control of mobile manipulators and drones. Previously, I worked as a 
-Data Engineer and now I'm interested in developing and integrating robotic subsystems for autonomy. Feel free to browse through my projects (non-exhaustive) and work.
+Data Engineer. Feel free to browse through my projects (non-exhaustive) and work.
 
-Reach out at: sdesh.work@gmail.com
+Interests: Systems Engineering / Robotics System Design, Learning-based control (RL, Diffusion, ML)
+
+Reach me: sdesh.work@gmail.com
 """
 
 # Collection to display on home

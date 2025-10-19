@@ -2,7 +2,7 @@
 title: "Robotics Intern"
 # author: "Francesco"
 # authorAvatarPath: "/avatar.jpeg"
-date: "2024-06-27"
+date: "2024-11-08"
 summary: "Mainblades (3 months)"
 # description: "Master Thesis"
 # toc: true

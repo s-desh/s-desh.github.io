@@ -3,7 +3,7 @@ title: "Fleet Autonomy for Lely Discovery Collector"
 # author: "Francesco"
 # authorAvatarPath: "/avatar.jpeg"
 date: "2024-06-27"
-summary: "Project"
+summary: "at TU Delft"
 # description: "Master Thesis"
 # toc: true
 # readTime: true
