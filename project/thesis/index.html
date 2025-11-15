@@ -64,25 +64,22 @@
 
 
 
-<link rel="stylesheet" href="/assets/combined.min.b879808724dff57749120657053aabcbe7a64a830038f3a04899bdf6623e439b.css" media="all">
+<link rel="stylesheet" href="/assets/combined.min.4702c9c0e4e4b1cf41129fc191e74bd6232a79a7b333ec6b67c55dac36080576.css" media="all">
 
 
 
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-xxxxxxxxx');
-        }
-      </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-xxxxxxxxx', { 'anonymize_ip': false });
+}
+</script>
+
 
 
 
@@ -191,23 +188,21 @@
       <p>This was my master thesis (MSc Robotics) project spanning 9 months. Click <a href="https://repository.tudelft.nl/record/uuid:c4d15d40-3b3e-463b-894f-f99955419197">here</a> to access the full thesis document.</p>
 <p><strong>Problem</strong><br>
 In short, the objective was to control the end-effector of an aerial manipualtor for pose-control and object manipulation. Previous work does this in a decoupled manner (sperate control of drone and manipulator), while my thesis involved implementing whole-body control leveraging reinforcement learning. The case for RL is that it learns the dynamics and handles external disturbances with minimal compute (on deployment) without needing a model, while model-based controllers (MPC, MPPI) rely on the accuracy of dervied model, which can be a non-trivial task when contact is involved.</p>
-
-<div class="table-outer">
-    <table>
-        <thead>
-            <tr>
-                <th>Aerial Manipulator</th>
-                <th>Pose control carrying 140 g</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="/images/osprey_flying.png" alt="Point cloud reconstruction" width="424"></td>
-                <td><img src="/images/real-world-140g-posecontrol.png" alt="SDF from point cloud" width="600"></td>
-            </tr>
-        </tbody>
-    </table>
-</div><p><strong>Contributions</strong></p>
+<table>
+<thead>
+<tr>
+<th>Aerial Manipulator</th>
+<th>Pose control carrying 140 g</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/images/osprey_flying.png" alt="Point cloud reconstruction" width="424"></td>
+<td><img src="/images/real-world-140g-posecontrol.png" alt="SDF from point cloud" width="600"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contributions</strong></p>
 <ul>
 <li>
 <p><strong>Train in simulation</strong> (<strong>Isaac Lab</strong>): Built a simulation environment modelling filters, low-level controllers and the aerial manipulator to train for end-effector pose control.</p>

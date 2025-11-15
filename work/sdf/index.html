@@ -64,25 +64,22 @@
 
 
 
-<link rel="stylesheet" href="/assets/combined.min.b879808724dff57749120657053aabcbe7a64a830038f3a04899bdf6623e439b.css" media="all">
+<link rel="stylesheet" href="/assets/combined.min.4702c9c0e4e4b1cf41129fc191e74bd6232a79a7b333ec6b67c55dac36080576.css" media="all">
 
 
 
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-xxxxxxxxx');
-        }
-      </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-xxxxxxxxx', { 'anonymize_ip': false });
+}
+</script>
+
 
 
 
@@ -189,23 +186,21 @@
     
     <div class="single-content">
       <p>Mainblades does aircraft inspections autonomously with drones. During my internship, I built a library to represent the obstacle map with SDFs (Signed Distance Fields), this enables using gradient based path planning algorithms, generating smoother trajectories.</p>
-
-<div class="table-outer">
-    <table>
-        <thead>
-            <tr>
-                <th>Point cloud reconstruction</th>
-                <th>SDF from point cloud</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="/images/747400_model.png" alt="Point cloud reconstruction" width="360"></td>
-                <td><img src="/images/747400_sdf.png" alt="SDF from point cloud" width="360"></td>
-            </tr>
-        </tbody>
-    </table>
-</div><p><strong>Highlights</strong></p>
+<table>
+<thead>
+<tr>
+<th>Point cloud reconstruction</th>
+<th>SDF from point cloud</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/images/747400_model.png" alt="Point cloud reconstruction" width="360"></td>
+<td><img src="/images/747400_sdf.png" alt="SDF from point cloud" width="360"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Highlights</strong></p>
 <ul>
 <li>
 <p>Built SDFGen to convert LiDAR point clouds and reconstructed aircraft models into SDFs (signed distance fields) maps.</p>

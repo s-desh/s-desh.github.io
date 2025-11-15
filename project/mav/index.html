@@ -64,25 +64,22 @@
 
 
 
-<link rel="stylesheet" href="/assets/combined.min.b879808724dff57749120657053aabcbe7a64a830038f3a04899bdf6623e439b.css" media="all">
+<link rel="stylesheet" href="/assets/combined.min.4702c9c0e4e4b1cf41129fc191e74bd6232a79a7b333ec6b67c55dac36080576.css" media="all">
 
 
 
 
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-xxxxxxxxx');
-        }
-      </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-xxxxxxxxx"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-xxxxxxxxx', { 'anonymize_ip': false });
+}
+</script>
+
 
 
 
@@ -190,23 +187,21 @@
     <div class="single-content">
       <p><strong>Problem</strong><br>
 Enable autonomous obstacle avoidance for a Parrot Bebop MAV in TU Delft’s Cyberzoo using monocular vision under tight onboard compute and variable lighting/scene conditions. The system must pick safe headings and fly reliably around pillars, trees, carpets, and “mysterious” obstacles.</p>
-
-<div class="table-outer">
-    <table>
-        <thead>
-            <tr>
-                <th>Canny edge algorithm</th>
-                <th>Monodepth</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="/images/canny_edge.png" alt="Edge detection result" width="424"></td>
-                <td><img src="/images/monodepth.png" alt="Depth estimation" width="450"></td>
-            </tr>
-        </tbody>
-    </table>
-</div><p><strong>Contributions</strong></p>
+<table>
+<thead>
+<tr>
+<th>Canny edge algorithm</th>
+<th>Monodepth</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/images/canny_edge.png" alt="Edge detection result" width="424"></td>
+<td><img src="/images/monodepth.png" alt="Depth estimation" width="450"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Contributions</strong></p>
 <ul>
 <li>
 <p>Benchmarked monocular obstacle-avoidance methods - optic flow, edge detection, monocular depth and color segmentation on Parrot
