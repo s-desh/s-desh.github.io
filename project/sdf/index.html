@@ -34,21 +34,21 @@
 
 <title>
     
-    Whole-body control of an aerial manipulator with reinforcement learning | Shlok Deshmukh
+    SDFGen: A library to generate Signed Distance Fields | Shlok Deshmukh
     
 </title>
 
-<link rel="canonical" href="https://s-desh.github.io/project/thesis/"/>
+<link rel="canonical" href="https://s-desh.github.io/project/sdf/"/>
 
-<meta property="og:url" content="https://s-desh.github.io/project/thesis/">
+<meta property="og:url" content="https://s-desh.github.io/project/sdf/">
   <meta property="og:site_name" content="Shlok Deshmukh">
-  <meta property="og:title" content="Whole-body control of an aerial manipulator with reinforcement learning">
-  <meta property="og:description" content="Controlling a flying arm to perform pose-control and manipulation.">
+  <meta property="og:title" content="SDFGen: A library to generate Signed Distance Fields">
+  <meta property="og:description" content="Robotics intern @ Mainblades (3 months)">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="project">
-    <meta property="article:published_time" content="2025-08-27T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-08-27T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-11-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-11-08T00:00:00+00:00">
     <meta property="article:tag" content="Learning">
     <meta property="article:tag" content="Control">
     <meta property="article:tag" content="Aerial-Robotics">
@@ -169,15 +169,15 @@ if (!doNotTrack) {
   <article>
     <header class="single-intro-container">
         
-        <h1 class="single-title">Whole-body control of an aerial manipulator with reinforcement learning</h1>
-        <p class="single-summary">Controlling a flying arm to perform pose-control and manipulation.</p>
+        <h1 class="single-title">SDFGen: A library to generate Signed Distance Fields</h1>
+        <p class="single-summary">Robotics intern @ Mainblades (3 months)</p>
         
         <div class="single-subsummary">
           
           <div>
             
             <p class="single-date">
-              <time datetime="2025-08-27T00:00:00&#43;00:00">August 27, 2025</time>
+              <time datetime="2024-11-08T00:00:00&#43;00:00">November 8, 2024</time>
             </p>
           </div>
         </div>
@@ -185,55 +185,35 @@ if (!doNotTrack) {
     </header>
     
     <div class="single-content">
-      <p>This was my master thesis (MSc Robotics) project spanning 9 months. Click <a href="https://repository.tudelft.nl/record/uuid:c4d15d40-3b3e-463b-894f-f99955419197">here</a> to access the full thesis document.</p>
-<p><strong>Overview</strong></p>
-<p>Model-based methods of control need an accurate transition model and aren&rsquo;t robust to disturbances from the environment, especially when contact is involved. RL is a promising alternative, where the transition / dynamics model is learned by simulating interactions, including disturbances and model mismatch. The goal was to develop a control architecture using RL, to <strong>control the end-effector pose of an aerial manipulator</strong>, and demonstrating robustness via real-world experiments.</p>
+      <p><strong>Overview</strong></p>
+<p>Mainblades does aircraft inspections autonomously with drones. During my internship, I built a library (based on <a href="https://github.com/VIS4ROB-lab/voxfield">Voxfield</a>) to represent the obstacle map with SDFs (Signed Distance Fields), this enables using gradient based path planning algorithms, generating smoother trajectories.</p>
 <table>
 <thead>
 <tr>
-<th>Pose control with 140 g payload</th>
-<th>Pushing a 590 g box</th>
+<th>Point cloud reconstruction</th>
+<th>SDF from point cloud</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><img src="/images/real-world-140g.png" alt="Point cloud reconstruction" width="424"></td>
-<td><img src="/images/object_push.png" alt="SDF from point cloud" width="360"></td>
+<td><img src="/images/747400_model.png" alt="Point cloud reconstruction" width="360"></td>
+<td><img src="/images/747400_sdf.png" alt="SDF from point cloud" width="360"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Contributions</strong></p>
+<p><strong>Highlights</strong></p>
 <ul>
 <li>
-<p>Developed a hybrid control architecture, using a PPO-based trained policy for high level commands followed by traditional controllers for low-level tracking, balancing the tradeoff between control authority and sim-to-real transfer.</p>
+<p>Built SDFGen to convert LiDAR point clouds and reconstructed aircraft models into SDFs (signed distance fields) maps.</p>
 </li>
 <li>
-<p>Developed a high fidelity simulation environment in <strong>NVIDIA Isaac Lab</strong> for training, by modelling low-level controllers, drone physics, actuators behavior and filters.</p>
+<p>Developed sdfgen_live (ROS) to integrate live LiDAR/rosbag data during flight and publish an SDF map for online planners while supporting initialization from prior maps for faster startup.</p>
 </li>
 <li>
-<p>Developed a training regime that involved iterating on reward functions, observation/action space, utilizing techniques like domain randomization and curriculum learning, to successfully perform end-effector pose control with minimal sim-to-real gap.</p>
-</li>
-<li>
-<p>For hardware (powered by Raspberry Pi 5), wrote the control pipeline with (<a href="https://github.com/uzh-rpg/agilicious">Agilicious</a>) flight controller for drone control (RL + Acceleration/Attitude + INDI) and interfaces with dynamixel actuators for arm control (RL + PID). The policy used ONNX runtime + C++ for inference.</p>
+<p>Validated with static reconstructed aircraft models (B747/B777), flight rosbags, and hardware-in-the-loop on a DJI M300 and achieved 2 Hz SDF generation onboard.</p>
 </li>
 </ul>
-<p><strong>Results</strong></p>
-<ul>
-<li>
-<p>Successfully trained and deployed in real-world. (<a href="https://youtu.be/J3yqEvS4G_c">Video</a>)</p>
-</li>
-<li>
-<p>The policy is able to accurately (5.3 cm, 8.8 ° error) perform end-effector pose control achieving 6-DoF commanded poses, with inferece time of 0.18 ms.</p>
-</li>
-<li>
-<p>Can successfully track poses, while carrying payloads upto 140 g.</p>
-</li>
-<li>
-<p>Same policy can handle external disturbances and push a box weighing 590 g.</p>
-</li>
-</ul>
-<p><strong>Languages and tools used:</strong> C++, Python, ROS, Isaac Sim, Gazebo</p>
-<p><em>Working on this was incredibly rewarding.</em></p>
+<p><strong>Languages and tools used:</strong> C++, ROS</p>
 
     </div>
   </article>
@@ -255,8 +235,8 @@ if (!doNotTrack) {
             <div class="single-pagination-container-prev">
                 <div class="single-pagination-text">←</div>
                 <div class="single-pagination-text">
-                    <a href="/project/sdf/">
-                        SDFGen: A library to generate Signed Distance Fields
+                    <a href="/project/fleet_auto/">
+                        Fleet Autonomy for Lely Discovery Collector
                     </a>
                 </div>
             </div>
@@ -264,6 +244,15 @@ if (!doNotTrack) {
         </div>
 
         <div class="single-pagination-next">
+            
+            <div class="single-pagination-container-next">
+                <div class="single-pagination-text">
+                    <a href="/project/thesis/">
+                        Whole-body control of an aerial manipulator with reinforcement learning
+                    </a>
+                </div>
+                <div class="single-pagination-text">→</div>
+            </div>
             
         </div>
 

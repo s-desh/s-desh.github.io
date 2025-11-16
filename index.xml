@@ -9,39 +9,53 @@
     <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://s-desh.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Robotics Intern</title>
+      <link>https://s-desh.github.io/work/sdf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/work/sdf/</guid>
+      <description>Built SDFGen to convert LiDAR point clouds and reconstructed aircraft models into SDFs (signed distance fields) maps.&#xA;Developed sdfgen_live (ROS) to integrate live LiDAR/rosbag data during flight and publish an SDF map for online planners while supporting initialization from prior maps for faster startup.&#xA;Validated with static reconstructed aircraft models (B747/B777), flight rosbags, and hardware-in-the-loop on a DJI M300 and achieved 2 Hz SDF generation onboard.&#xA;Languages and tools used: C++, ROS</description>
+    </item>
+    <item>
+      <title>Data Engineer</title>
+      <link>https://s-desh.github.io/work/data_engg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/work/data_engg/</guid>
+      <description>Engineered AWS-based data-infra (Nextflow, Docker, Terraform) to process and ingest 30–100 GB of biomedical datasets, per day.&#xA;Trained and deployed BERT-based (BioBERT) embedding models for named-entity normalization (NEN) tasks on biomedical text.&#xA;Automated daily data ingestion from multiple databanks and built tools for monitoring, validation and actionable alerts.&#xA;Languages and tools used: Python, PyTorch, Docker, Terraform, AWS cloud services</description>
+    </item>
+    <item>
       <title>Whole-body control of an aerial manipulator with reinforcement learning</title>
       <link>https://s-desh.github.io/project/thesis/</link>
       <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://s-desh.github.io/project/thesis/</guid>
-      <description>Master Thesis</description>
+      <description>Controlling a flying arm to perform pose-control and manipulation.</description>
     </item>
     <item>
-      <title>Robotics Intern</title>
-      <link>https://s-desh.github.io/work/sdf/</link>
+      <title>SDFGen: A library to generate Signed Distance Fields</title>
+      <link>https://s-desh.github.io/project/sdf/</link>
       <pubDate>Fri, 08 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>https://s-desh.github.io/work/sdf/</guid>
-      <description>Mainblades (3 months)</description>
+      <guid>https://s-desh.github.io/project/sdf/</guid>
+      <description>Robotics intern @ Mainblades (3 months)</description>
     </item>
     <item>
       <title>Fleet Autonomy for Lely Discovery Collector</title>
       <link>https://s-desh.github.io/project/fleet_auto/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
       <guid>https://s-desh.github.io/project/fleet_auto/</guid>
-      <description>at TU Delft</description>
+      <description>Controlling a fleet of mobile manipulators for area coverage and manure detection.</description>
     </item>
     <item>
       <title>Vision based obstacle avoidance for MAV</title>
       <link>https://s-desh.github.io/project/mav/</link>
       <pubDate>Wed, 20 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://s-desh.github.io/project/mav/</guid>
-      <description>at TU Delft</description>
+      <description>Bechmarking obstacle avoidance methods for Parrot Bepop drone.</description>
     </item>
     <item>
       <title>Multi-object tracking</title>
       <link>https://s-desh.github.io/project/multi_obj/</link>
       <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://s-desh.github.io/project/multi_obj/</guid>
-      <description>at TU Delft</description>
+      <description>Pedestrian tracking using LiDAR and camera sensors.</description>
     </item>
     <item>
       <title>Whole-body control of an aerial manipulator with reinforcement learning</title>
@@ -49,13 +63,6 @@
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://s-desh.github.io/posts/first/</guid>
       <description>An LSM Tree overview and Java implementation.</description>
-    </item>
-    <item>
-      <title>Data Engineer</title>
-      <link>https://s-desh.github.io/work/data_engg/</link>
-      <pubDate>Sat, 15 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>https://s-desh.github.io/work/data_engg/</guid>
-      <description>Elucidata (2 years)</description>
     </item>
   </channel>
 </rss>

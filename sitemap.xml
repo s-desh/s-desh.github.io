@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://s-desh.github.io/work/sdf/</loc>
+  </url><url>
+    <loc>https://s-desh.github.io/work/data_engg/</loc>
+  </url><url>
     <loc>https://s-desh.github.io/tags/aerial-robotics/</loc>
     <lastmod>2025-08-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -23,10 +27,7 @@
     <loc>https://s-desh.github.io/project/thesis/</loc>
     <lastmod>2025-08-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://s-desh.github.io/work/sdf/</loc>
-    <lastmod>2024-11-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://s-desh.github.io/work/</loc>
+    <loc>https://s-desh.github.io/project/sdf/</loc>
     <lastmod>2024-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://s-desh.github.io/project/fleet_auto/</loc>
@@ -50,7 +51,6 @@
     <loc>https://s-desh.github.io/posts/first/</loc>
     <lastmod>2023-11-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://s-desh.github.io/work/data_engg/</loc>
-    <lastmod>2023-07-15T00:00:00+00:00</lastmod>
+    <loc>https://s-desh.github.io/work/</loc>
   </url>
 </urlset>
