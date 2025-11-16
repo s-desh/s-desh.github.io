@@ -3,7 +3,7 @@ title: "Fleet Autonomy for Lely Discovery Collector"
 # author: "Francesco"
 # authorAvatarPath: "/avatar.jpeg"
 date: "2024-06-27"
-summary: "at TU Delft"
+summary: "Controlling a fleet of mobile manipulators for area coverage and manure detection."
 # description: "Master Thesis"
 # toc: true
 # readTime: true

@@ -3,7 +3,7 @@ title: "Vision based obstacle avoidance for MAV"
 # author: "Francesco"
 # authorAvatarPath: "/avatar.jpeg"
 date: "2024-03-20"
-summary: "at TU Delft"
+summary: "Bechmarking obstacle avoidance methods for Parrot Bepop drone."
 # description: "Master Thesis"
 # toc: true
 # readTime: true
@@ -13,6 +13,7 @@ tags: ["learning", "control", "aerial-robotics"]
 showTags: false
 hideBackToTop: false
 fediverse: "@username@instance.url"
+image: "/images/canny_edge.png"
 ---
 
 **Problem**  

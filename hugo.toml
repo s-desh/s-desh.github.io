@@ -29,7 +29,7 @@ homeIntroContent = """
 I'm an engineer with hands-on experience in perception, motion planning and learning-based control of mobile manipulators and drones. Previously, I worked as a 
 Data Engineer. Feel free to browse through my projects (non-exhaustive) and work.
 
-Interests: Systems Engineering / Robotics System Design, Learning-based control (RL, Diffusion, ML)
+Interests: Robotics Software Engineering (perception, planning, system design), Learning-based control.
 
 Reach me: sdesh.work@gmail.com
 """
@@ -37,7 +37,7 @@ Reach me: sdesh.work@gmail.com
 # Collection to display on home
 homeCollectionTitle = 'highlights'
 homeCollection = 'project'
-homeCollectionSelected = ['project/thesis', 'work/sdf', 'project/mav']
+homeCollectionSelected = ['project/thesis', 'project/sdf', 'project/mav']
 
 # Lists parameters
 paginationSize = 100

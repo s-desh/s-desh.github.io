@@ -1,0 +1,63 @@
+/* Small styles specific to the work listing view (non-linking) */
+.work-line {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.work-line .line-image img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.work-title {
+  font-weight: 600;
+  margin: 0 0 0.35rem 0;
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.work-company {
+  margin: 0 0 0.5rem 0;
+  color: var(--muted-color, #666);
+  font-size: 0.95rem;
+}
+
+.work-meta-right {
+  display: flex;
+  gap: 0.75rem;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.work-duration, .work-location {
+  font-size: 0.9rem;
+  color: var(--muted-color, #666);
+}
+
+.work-pointers {
+  margin-top: 0.25rem;
+  color: var(--muted-color, #444);
+  line-height: 1.45;
+}
+
+.work-pointers ul {
+  margin: 0.35rem 0 0 1.1rem;
+}
+
+.work-pointers li {
+  margin: 0.35rem 0;
+}
+
+@media (max-width: 700px) {
+  .work-line { flex-direction: column; }
+  .work-line .line-image img { width: 100%; height: auto; }
+}

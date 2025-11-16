@@ -3,7 +3,7 @@ title: "Multi-object tracking"
 # author: "Francesco"
 # authorAvatarPath: "/avatar.jpeg"
 date: "2024-01-30"
-summary: "at TU Delft"
+summary: "Pedestrian tracking using LiDAR and camera sensors."
 # description: "Master Thesis"
 # toc: true
 # readTime: true
