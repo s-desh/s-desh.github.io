@@ -58,6 +58,13 @@
       <description>Pedestrian tracking using LiDAR and camera sensors.</description>
     </item>
     <item>
+      <title>Multi-agent search-and-rescue system</title>
+      <link>https://s-desh.github.io/project/path_planning_sar/</link>
+      <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://s-desh.github.io/project/path_planning_sar/</guid>
+      <description>Multi-drone path planning with global / local planners for search and rescue simulation.</description>
+    </item>
+    <item>
       <title>Whole-body control of an aerial manipulator with reinforcement learning</title>
       <link>https://s-desh.github.io/posts/first/</link>
       <pubDate>Sun, 12 Nov 2023 00:00:00 +0000</pubDate>

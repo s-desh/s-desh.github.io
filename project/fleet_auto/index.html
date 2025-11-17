@@ -186,34 +186,34 @@ if (!doNotTrack) {
     
     <div class="single-content">
       <p>This was a project for the Multidisciplinary course at TU Delft, delivered by our team. The client problem was inspired by the Lely Discovery Collector barn-cleaning robot.</p>
-<p><strong>Problem</strong><br>
-Automate barn cleaning with reliable <strong>localization</strong>, <strong>obstacle avoidance</strong> (cows, humans, walls), and <strong>multi-robot coordination</strong>, reducing user burden for route planning and enabling cooperation between multiple robots.</p>
+<p><strong>Overview</strong><br>
+The goal was to automate barn cleaning with reliable <strong>localization</strong>, <strong>obstacle avoidance</strong> (cows, humans, walls), and <strong>multi-robot coordination</strong>, for maximum coverage and manure detection.</p>
 <p><strong>Contributions</strong></p>
 <ul>
 <li>
-<p><strong>Two-phase workflow:</strong> Developed a system with a single <strong>mapping</strong> robot for map generation followed by coverage using all robots that use local planners to avoid dynamic obstacles.</p>
+<p>Developed a system with a single exploration and mapping robot for map generation followed by coverage using all robots that use local planners to avoid dynamic obstacles.</p>
 </li>
 <li>
-<p><strong>Central planner (resource-aware):</strong> Formulates a routing/coverage problem. Implemented in MiniZinc and solved with OR-Tools CP-SAT for faster valid/optimal solutions.</p>
+<p>A central planner formulates a routing/coverage problem. Implemented in MiniZinc and solved with OR-Tools CP-SAT for faster valid/optimal solutions.</p>
 </li>
 <li>
-<p><strong>Robot stack (ROS):</strong> <code>navigator</code> node follows global paths via <strong>move_base</strong>, <code>mapping_node</code> launches <strong>slam_toolbox</strong>, <code>communications_node</code> bridges ROS↔︎server over <strong>MQTT</strong> for coordination between multiple robots.</p>
+<p>The implemented ROS stack uses, <code>navigator</code> node to follow global paths via <strong>move_base</strong>, <code>mapping_node</code> to launch <strong>slam_toolbox</strong>, <code>communications_node</code> bridging ROS and local server over <strong>MQTT</strong> for coordination between multiple robots.</p>
 </li>
 <li>
-<p><strong>Interfaces:</strong> Developed desktop planning UI to define waypoints/resources and visualize maps/states, a mobile GUI for monitoring, teleop, and E-stop.</p>
+<p>Developed desktop planning UI to define waypoints/resources and visualize maps/states, a mobile GUI for monitoring, teleop, and E-stop.</p>
 </li>
 </ul>
 <p><strong>Results</strong></p>
 <ul>
 <li>
-<p><strong>Core wins:</strong> Central planner↔︎robot comms established, <strong>resource-aware route planning</strong>, <strong>reactive local planning</strong> around dynamic obstacles, <strong>robust localization</strong> with LiDAR and usable UIs.</p>
+<p>Successfully implemented and coordinated 3 mobile manipulators to navigate a barn with <strong>resource-aware route planning</strong>, <strong>reactive local planning</strong> around dynamic obstacles and robust localization with LiDAR.</p>
 </li>
 <li>
-<p><strong>Perception:</strong> 2D→3D target localization mean error ≈ <strong>±2 cm</strong> (passed).</p>
+<p>Awarded the most robust solution.</p>
 </li>
 </ul>
 <p><strong>Languages and tools used:</strong> ROS (move_base, slam_toolbox), C++, Python, MQTT, pygame, NumPy.</p>
-<p><em>My contributions were primarily designing and implementing the behavior architecture that included integrating mapping, obstacle detection and navigation with a state machine. This project was a good lesson on system design with multiple robots involved.</em></p>
+<p><em>My contributions were, designing and implementing the behavior architecture that included integrating mapping, obstacle detection and navigation with a state machine.</em></p>
 
     </div>
   </article>
