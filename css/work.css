@@ -1,63 +1,97 @@
-/* Small styles specific to the work listing view (non-linking) */
-.work-line {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+/* Techy work section styles */
+.work-card {
+    border: 2px solid currentColor;
+    border-radius: 0;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+    background: transparent;
+    transition: all 0.2s ease;
 }
 
-.work-line .line-image img {
-  width: 96px;
-  height: 96px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.work-title {
-  font-weight: 600;
-  margin: 0 0 0.35rem 0;
+.work-card:hover {
+    border-color: var(--accent-color);
 }
 
 .work-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px dashed rgba(255,255,255,0.2);
+}
+
+.work-title-row {
+    font-family: 'Liberation Mono', monospace;
+    font-size: 1rem;
+}
+
+.work-role {
+    font-weight: 600;
+    color: inherit;
+}
+
+.work-at {
+    opacity: 0.6;
+    margin: 0 0.25rem;
 }
 
 .work-company {
-  margin: 0 0 0.5rem 0;
-  color: var(--muted-color, #666);
-  font-size: 0.95rem;
+    opacity: 0.8;
 }
 
-.work-meta-right {
-  display: flex;
-  gap: 0.75rem;
-  white-space: nowrap;
-  align-items: center;
+.work-meta {
+    font-family: 'Liberation Mono', monospace;
+    font-size: 0.8rem;
+    color: inherit;
+    opacity: 0.7;
+    display: flex;
+    gap: 0.75rem;
 }
 
-.work-duration, .work-location {
-  font-size: 0.9rem;
-  color: var(--muted-color, #666);
+.work-duration {
+    color: inherit;
 }
 
-.work-pointers {
-  margin-top: 0.25rem;
-  color: var(--muted-color, #444);
-  line-height: 1.45;
+.work-location {
+    color: inherit;
 }
 
-.work-pointers ul {
-  margin: 0.35rem 0 0 1.1rem;
+.work-body {
+    font-size: 0.9em;
+    line-height: 1.65;
+    color: inherit;
+    opacity: 0.9;
 }
 
-.work-pointers li {
-  margin: 0.35rem 0;
+.work-body ul {
+    margin: 0.5rem 0 0.5rem 1.25rem;
+    padding: 0;
 }
 
-@media (max-width: 700px) {
-  .work-line { flex-direction: column; }
-  .work-line .line-image img { width: 100%; height: auto; }
+.work-body li {
+    margin: 0.4rem 0;
+}
+
+.work-body p {
+    margin: 0.5rem 0;
+}
+
+.work-body strong {
+    font-family: 'Liberation Mono', monospace;
+    font-size: 0.85em;
+    color: inherit;
+}
+
+@media (max-width: 600px) {
+    .work-header {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .work-card {
+        padding: 1rem;
+    }
 }
