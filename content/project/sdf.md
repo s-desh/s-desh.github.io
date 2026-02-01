@@ -25,9 +25,9 @@ Mainblades does aircraft inspections autonomously with drones. During my interns
 
 
 
-**Highlights**
+**Contributions**
 
-- Built SDFGen to convert LiDAR point clouds and reconstructed aircraft models into SDFs (signed distance fields) maps.
+- Built SDFGen, to convert LiDAR point clouds and reconstructed aircraft models into SDFs (signed distance fields) maps.
 
 - Developed sdfgen\_live (ROS) to integrate live LiDAR/rosbag data during flight and publish an SDF map for online planners while supporting initialization from prior maps for faster startup.
 

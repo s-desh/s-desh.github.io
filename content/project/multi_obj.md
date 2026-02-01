@@ -16,8 +16,8 @@ fediverse: "@username@instance.url"
 ---
 
 
-**Problem**  
-Track pedestrians on the ground plane (BEV 2D) from a moving vehicle using multi-sensor inputs (camera, LiDAR). The goal was to produce stable pedestrian trajectories over time despite noisy detections, occlusions, and ego-motion.
+**Overview**  
+Goal was to track pedestrians on the ground plane (BEV 2D) from a moving vehicle using multi-sensor inputs (camera, LiDAR) by producing produce stable pedestrian trajectories over time despite noisy detections, occlusions, and ego-motion.
 
 **Contributions**
 - Designed a ground-plane projection method that uses the bottom-midpoint of 2D boxes, calibrated extrinsics, and ego pose to obtain reliable pedestrian footpoints in BEV.
@@ -31,4 +31,3 @@ Achieved stable BEV trajectories on cleaner sequences with consistently high ass
 
 **Languages and tools used:** Python, Open3D
 
-*Hail the Kalman filter.*

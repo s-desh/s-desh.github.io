@@ -25,7 +25,6 @@ Model-based methods of control need an accurate transition model and aren't robu
 |---|---|
 | <img src="/images/real-world-140g.png" alt="Point cloud reconstruction" width="424"> | <img src="/images/object_push.png" alt="SDF from point cloud" width="360"> |
 
-
 **Contributions**  
 
 - Developed a hybrid control architecture, using a PPO-based trained policy for high level commands followed by traditional controllers for low-level tracking, balancing the tradeoff between control authority and sim-to-real transfer.

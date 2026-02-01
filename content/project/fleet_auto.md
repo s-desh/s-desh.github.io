@@ -16,23 +16,24 @@ fediverse: "@username@instance.url"
 ---
 This was a project for the Multidisciplinary course at TU Delft, delivered by our team. The client problem was inspired by the Lely Discovery Collector barn-cleaning robot.
 
-**Problem**  
-Automate barn cleaning with reliable **localization**, **obstacle avoidance** (cows, humans, walls), and **multi-robot coordination**, reducing user burden for route planning and enabling cooperation between multiple robots.
+**Overview**  
+The goal was to automate barn cleaning with reliable **localization**, **obstacle avoidance** (cows, humans, walls), and **multi-robot coordination**, for maximum coverage and manure detection.
 
 **Contributions**  
-- **Two-phase workflow:** Developed a system with a single **mapping** robot for map generation followed by coverage using all robots that use local planners to avoid dynamic obstacles.
+- Developed a system with a single exploration and mapping robot for map generation followed by coverage using all robots that use local planners to avoid dynamic obstacles.
 
-- **Central planner (resource-aware):** Formulates a routing/coverage problem. Implemented in MiniZinc and solved with OR-Tools CP-SAT for faster valid/optimal solutions.
+- A central planner formulates a routing/coverage problem. Implemented in MiniZinc and solved with OR-Tools CP-SAT for faster valid/optimal solutions.
 
-- **Robot stack (ROS):** `navigator` node follows global paths via **move_base**, `mapping_node` launches **slam_toolbox**, `communications_node` bridges ROS↔︎server over **MQTT** for coordination between multiple robots.
+- The implemented ROS stack uses, `navigator` node to follow global paths via **move_base**, `mapping_node` to launch **slam_toolbox**, `communications_node` bridging ROS and local server over **MQTT** for coordination between multiple robots.
 
-- **Interfaces:** Developed desktop planning UI to define waypoints/resources and visualize maps/states, a mobile GUI for monitoring, teleop, and E-stop.
+- Developed desktop planning UI to define waypoints/resources and visualize maps/states, a mobile GUI for monitoring, teleop, and E-stop.
 
 **Results**  
-- **Core wins:** Central planner↔︎robot comms established, **resource-aware route planning**, **reactive local planning** around dynamic obstacles, **robust localization** with LiDAR and usable UIs.
- 
-- **Perception:** 2D→3D target localization mean error ≈ **±2 cm** (passed).
+
+- Successfully implemented and coordinated 3 mobile manipulators to navigate a barn with **resource-aware route planning**, **reactive local planning** around dynamic obstacles and robust localization with LiDAR.
+
+- Awarded the most robust solution.
 
 **Languages and tools used:** ROS (move_base, slam_toolbox), C++, Python, MQTT, pygame, NumPy.
 
-*My contributions were primarily designing and implementing the behavior architecture that included integrating mapping, obstacle detection and navigation with a state machine. This project was a good lesson on system design with multiple robots involved.*
+*My contributions were, designing and implementing the behavior architecture that included integrating mapping, obstacle detection and navigation with a state machine.*

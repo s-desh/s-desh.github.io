@@ -1,28 +1,16 @@
-<div class="work-line">
-
-    {{ if .Params.image }}
-    <div class="line-image">
-        <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
-    </div>
-    {{ end }}
-
-    <div class="line-content">
-
-        <div class="work-header">
-            <p class="work-title">{{ .Title }}</p>
-
-            <div class="work-meta-right">
-                {{ with .Params.duration }}<span class="work-duration">{{ . }}</span>{{ end }}
-                {{ with .Params.location }}<span class="work-location">{{ . }}</span>{{ end }}
-            </div>
+<div class="work-card">
+    <div class="work-header">
+        <div class="work-title-row">
+            <span class="work-role">{{ .Title }}</span>
+            <span class="work-at">@</span>
+            <span class="work-company">{{ .Params.company }}</span>
         </div>
-
-        {{ with .Params.company }}
-        <p class="work-company">{{ . }}</p>
-        {{ end }}
-
-        {{/* Render the page content as pointers (authors should use markdown lists). No summary used. */}}
-        <div class="work-pointers">{{ .Content }}</div>
-
+        <div class="work-meta">
+            {{ with .Params.duration }}<span class="work-duration">{{ . }}</span>{{ end }}
+            {{ with .Params.location }}<span class="work-location">// {{ . }}</span>{{ end }}
+        </div>
+    </div>
+    <div class="work-body">
+        {{ .Content }}
     </div>
 </div>

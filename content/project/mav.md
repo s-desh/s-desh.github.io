@@ -16,7 +16,7 @@ fediverse: "@username@instance.url"
 image: "/images/canny_edge.png"
 ---
 
-**Problem**  
+**Overview**  
 Enable autonomous obstacle avoidance for a Parrot Bebop MAV in TU Delft’s Cyberzoo using monocular vision under tight onboard compute and variable lighting/scene conditions. The system must pick safe headings and fly reliably around pillars, trees, carpets, and “mysterious” obstacles.
 
 | Canny edge algorithm | Monodepth |
@@ -38,4 +38,4 @@ Bebop drone.
 
 **Languages and tools used:** C, Python
 
-*In the end, the simplest method performed the best.*
+*In the end, the simplest method worked the best.*

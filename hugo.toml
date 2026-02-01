@@ -1,6 +1,6 @@
 baseURL = 'https://s-desh.github.io/'
 languageCode = 'en-us'
-title = 'Shlok Deshmukh'
+title = "> shlok deshmukh"
 theme = 'typo'
 
 # Google analytics code
@@ -18,7 +18,7 @@ description = ""
 pluralizeListTitles = false
 
 # Appearance settings
-theme = 'light'
+theme = 'dark'
 colorPalette = 'default'
 hideHeader = false
 showFooter = false
