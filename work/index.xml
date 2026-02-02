@@ -1,25 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>work on &gt; shlok deshmukh</title>
-    <link>https://s-desh.github.io/work/</link>
-    <description>Recent content in work on &gt; shlok deshmukh</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <atom:link href="https://s-desh.github.io/work/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Robotics Intern</title>
-      <link>https://s-desh.github.io/work/sdf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://s-desh.github.io/work/sdf/</guid>
-      <description>Built SDFGen to convert LiDAR point clouds and reconstructed aircraft models into SDFs (signed distance fields) maps.&#xA;Developed sdfgen_live (ROS) to integrate live LiDAR/rosbag data during flight and publish an SDF map for online planners while supporting initialization from prior maps for faster startup.&#xA;Validated with static reconstructed aircraft models (B747/B777), flight rosbags, and hardware-in-the-loop on a DJI M300 and achieved 2 Hz SDF generation onboard.&#xA;Languages and tools used: C++, ROS</description>
-    </item>
-    <item>
-      <title>Data Engineer</title>
-      <link>https://s-desh.github.io/work/data_engg/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://s-desh.github.io/work/data_engg/</guid>
-      <description>Engineered AWS-based data-infra (Nextflow, Docker, Terraform) to process and ingest 30–100 GB of biomedical datasets, per day.&#xA;Trained and deployed BERT-based (BioBERT) embedding models for named-entity normalization (NEN) tasks on biomedical text.&#xA;Automated daily data ingestion from multiple databanks and built tools for monitoring, validation and actionable alerts.&#xA;Languages and tools used: Python, PyTorch, Docker, Terraform, AWS cloud services</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>work on > shlok deshmukh</title><link>https://s-desh.github.io/work/</link><description>Recent content in work on > shlok deshmukh</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://s-desh.github.io/work/index.xml" rel="self" type="application/rss+xml"/><item><title>Robotics Intern</title><link>https://s-desh.github.io/work/sdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://s-desh.github.io/work/sdf/</guid><description>Built SDFGen to convert LiDAR point clouds and reconstructed aircraft models into SDFs (signed distance fields) maps.
+Developed sdfgen_live (ROS) to integrate live LiDAR/rosbag data during flight and publish an SDF map for online planners while supporting initialization from prior maps for faster startup.
+Validated with static reconstructed aircraft models (B747/B777), flight rosbags, and hardware-in-the-loop on a DJI M300 and achieved 2 Hz SDF generation onboard.
+Languages and tools used: C++, ROS</description></item><item><title>Data Engineer</title><link>https://s-desh.github.io/work/data_engg/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://s-desh.github.io/work/data_engg/</guid><description>Engineered AWS-based data-infra (Nextflow, Docker, Terraform) to process and ingest 30–100 GB of biomedical datasets, per day.
+Trained and deployed BERT-based (BioBERT) embedding models for named-entity normalization (NEN) tasks on biomedical text.
+Automated daily data ingestion from multiple databanks and built tools for monitoring, validation and actionable alerts.
+Languages and tools used: Python, PyTorch, Docker, Terraform, AWS cloud services</description></item></channel></rss>
