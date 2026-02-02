@@ -1,0 +1,77 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+{{/* Intro summary section */}}
+
+{{ if or .Site.Params.homeIntroTitle .Site.Params.homeIntroContent }}
+<div class="intro">
+    {{ with .Site.Params.homeIntroTitle }}
+    <h1>{{ . }}</h1>
+    {{ end }}
+
+    {{ with .Site.Params.homeIntroContent }}
+    <p>{{ . | markdownify }}</p>
+    {{ end }}
+</div>
+{{ end }}
+
+{{/* Social Icons */}}
+
+{{ with site.Params.social }}
+<div class="social-icons">
+    {{- range . }}
+    <a href="{{ trim .url " " | safeURL }}" target="_blank"
+        rel="noopener noreferrer me"
+        title="{{ (.title | default .name) | title }}">
+        {{ partial "svg.html" . }}
+    </a>
+    {{- end }}
+</div>
+{{ end }}
+
+{{/* Collection Section */}}
+
+{{ if .Site.Params.homeCollection }}
+
+<div class="list-container">
+  {{ with .Site.Params.homeCollectionTitle }}
+    <h1>{{ . }}</h1>
+  {{ end }}
+
+  {{/* Build a Pages slice only from params.homeCollectionSelected */}}
+  {{ $pages := slice }}
+  {{ $seen := dict }}
+
+  {{ with .Site.Params.homeCollectionSelected }}
+    {{ range . }}
+      {{ $p := site.GetPage . }}
+      {{ with $p }}
+        {{/* dedupe by RelPermalink */}}
+        {{ $key := .RelPermalink }}
+        {{ if not (isset $seen $key) }}
+          {{ $seen = merge $seen (dict $key true) }}
+          {{ $pages = $pages | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Pagination size (fallback to 10 if not set or <= 0) */}}
+  {{ $paginationSize := 10 }}
+  {{ with .Site.Params.paginationSize }}
+    {{ if gt . 0 }}{{ $paginationSize = . }}{{ end }}
+  {{ end }}
+
+  {{ $paginator := .Paginate $pages $paginationSize }}
+
+  {{ range $index, $page := $paginator.Pages }}
+    {{ partial "post-entry.html" $page }}
+  {{ end }}
+
+  {{ partial "pagination-controls.html" $paginator }}
+</div>
+
+
+{{ end }}
+{{ end }}

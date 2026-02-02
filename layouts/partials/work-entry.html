@@ -1,0 +1,16 @@
+<div class="work-card">
+    <div class="work-header">
+        <div class="work-title-row">
+            <span class="work-role">{{ .Title }}</span>
+            <span class="work-at">@</span>
+            <span class="work-company">{{ .Params.company }}</span>
+        </div>
+        <div class="work-meta">
+            {{ with .Params.duration }}<span class="work-duration">{{ . }}</span>{{ end }}
+            {{ with .Params.location }}<span class="work-location">// {{ . }}</span>{{ end }}
+        </div>
+    </div>
+    <div class="work-body">
+        {{ .Content }}
+    </div>
+</div>

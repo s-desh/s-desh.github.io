@@ -1,0 +1,88 @@
+baseURL = 'https://s-desh.github.io/'
+languageCode = 'en-us'
+title = "> shlok deshmukh"
+theme = 'typo'
+
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxx"
+
+[taxonomies]
+tag = 'tags'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+# Meta description
+description = ""
+pluralizeListTitles = false
+
+# Appearance settings
+theme = 'dark'
+colorPalette = 'default'
+hideHeader = false
+showFooter = false
+
+
+# Intro on main page, content is markdown
+homeIntroContent = """
+I'm an engineer with hands-on experience in perception, motion planning and learning-based control of mobile manipulators and drones. Previously, I worked as a 
+Data Engineer. Feel free to browse through my projects (non-exhaustive) and work.
+
+Interests: Robotics Software Engineering (perception, planning, system design), Learning-based control.
+
+Reach me: sdesh.work@gmail.com
+"""
+
+# Collection to display on home
+homeCollectionTitle = 'highlights'
+homeCollection = 'project'
+homeCollectionSelected = ['project/thesis', 'project/sdf', 'project/mav']
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = 'Jan 2006'
+
+# Breadcrumbs
+[params.breadcrumbs]
+enabled = false
+showCurrentPage = true
+home = "Home"
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/shlok-deshmukh/"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/s-desh"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "projects"
+url = "/project"
+
+[[params.menu]]
+name = "work"
+url = "/work"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"

@@ -1,0 +1,7 @@
+baseURL = "http://localhost:1313/"
+title = "Quickstart"
+theme = "ananke"           # for submodule
+# OR for modules:
+# [module]
+#   [[module.imports]]
+#   path = "github.com/theNewDynamic/gohugo-theme-ananke/v2"
