@@ -15,7 +15,13 @@ hideBackToTop: false
 fediverse: "@username@instance.url"
 image: "/images/osprey_flying.png"
 ---
-This was my master thesis (MSc Robotics) project spanning 9 months. Click [here](https://repository.tudelft.nl/record/uuid:c4d15d40-3b3e-463b-894f-f99955419197) to access the full thesis document.
+This was my master thesis (MSc Robotics) project spanning 9 months.
+
+**Media**
+
+Short experiment videos [here](https://www.youtube.com/playlist?list=PLVTmj2-51y33_IKPAQLPWBNYlhIyl0wsh).  
+Paper arXiv [link](https://arxiv.org/abs/2512.21085).   
+Thesis document [here](https://repository.tudelft.nl/record/uuid:c4d15d40-3b3e-463b-894f-f99955419197).
 
 **Overview**   
 
@@ -37,7 +43,7 @@ Model-based methods of control need an accurate transition model and aren't robu
 
 
 **Results**  
-- Successfully trained and deployed in real-world. ([Video](https://youtu.be/J3yqEvS4G_c)) 
+- Successfully trained and deployed in real-world (video links above). 
 
 - The policy is able to accurately (5.3 cm, 8.8 ° error) perform end-effector pose control achieving 6-DoF commanded poses, with inferece time of 0.18 ms.
 
